@@ -13,12 +13,12 @@ function OrderConfirmModal({state,dispatch,setOrderConfirmPopup}) {
         dispatch({type:'reset'})
     }
     return (
-        <div className="bg-white px-4 rounded-3xl py-10 fixed z-20  top-[14%] left-[0%] h-[90vh] w-[100%] md:w-[45%] md:left-[28%] md:top-[6%]">
+        <div className="bg-white px-4 overflow-y-auto rounded-3xl py-10 fixed z-20  top-[14%] left-[0%] h-[90vh] w-[100%] md:w-[45%] md:left-[28%] md:top-[6%]">
             <div>
                 <img src="./assets/images/icon-order-confirmed.svg" />
                 <h1 className="text-[3.4rem] font-black">Order Confirmed</h1>
                 <p className="text-gray-500 text-[1.2rem]">we hope you enjoy your food!</p>
-                <div className="mt-6 bg-blue-200 px-6 py-4 rounded-2xl">
+                <div className="mt-6 bg-blue-200 px-6 py-4 rounded-2xl overflow-y-auto">
                    {state.cart.map((el)=>{
                     return( <div className="flex justify-between  mt-2 border-b-1 border-b-gray-400">
                         
